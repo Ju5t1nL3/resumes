@@ -24,7 +24,7 @@
   set document(
     title:  author-name + " | " + document-title-suffix ,
     author: author-name,
-    keywords: "cv",
+    keywords: ("cv", "resume"),
     date: none
   )
 
