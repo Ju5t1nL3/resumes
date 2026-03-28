@@ -9,7 +9,7 @@
   font: "New Computer Modern",
   font-size: 11pt,
   personal-info-font-size: 10.5pt,
-  document-title-prefix: "Résumé",
+  document-title-suffix: "Resume",
   author-name: "",
   author-position: center,
   personal-info-position: center,
@@ -23,7 +23,7 @@
   body
 ) = {
   set document(
-    title: document-title-prefix + " | " + author-name,
+    title:  author-name + " | " + document-title-suffix ,
     author: author-name,
     keywords: "cv",
     date: none
