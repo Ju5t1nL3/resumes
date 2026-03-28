@@ -198,15 +198,12 @@
 }
 
 // Pretty self-explanatory.
-#let education-heading(institution, location, degree, major, start-date, end-date, body) = {
+#let education-heading(institution, location, major, minor, expected-date, body) = {
   // sanity checks
-  assert.eq(type(start-date), datetime)
-  assert(type(end-date) == datetime or type(end-date) == str)
-
   generic_2x2(
     (70%, 30%),
-    [*#institution*], [*#location*], 
-    [#degree, #major], period_worked(start-date, end-date)
+    [*#institution*], [*#expected-date*], 
+    [#major, #minor], [**#location**]
   )
   v(-0.2em)
   if body != [] {
