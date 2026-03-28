@@ -19,7 +19,6 @@
   website: "",
   linkedin-user-id: "",
   github-username: "",
-  lang: "en",
   body
 ) = {
   set document(
@@ -142,19 +141,17 @@
     end-date = datetime.today()
   }
 
-  context {
-    return [
-        #custom-date-format(start-date, pattern: "MMM yyyy", lang: text.lang) -- 
-        #if (
-          (end-date.month() == datetime.today().month()) and 
-          (end-date.year() == datetime.today().year())
-        ) [
-          Present // Needs to be translated
-        ] else [
-          #custom-date-format(end-date, pattern: "MMM yyyy", lang: text.lang)
-        ]
-    ]
-  }
+  return [
+      #custom-date-format(start-date, pattern: "MMM yyyy") -- 
+      #if (
+        (end-date.month() == datetime.today().month()) and 
+        (end-date.year() == datetime.today().year())
+      ) [
+        Present // Needs to be translated
+      ] else [
+        #custom-date-format(end-date, pattern: "MMM yyyy")
+      ]
+  ]
 }
 
 // Pretty self-explanatory.
