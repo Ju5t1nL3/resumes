@@ -215,7 +215,7 @@
 // Pretty self-explanatory.
 #let education-heading(
   institution,
-  location,
+  gpa,
   major,
   minor,
   expected-date,
@@ -227,7 +227,7 @@
     [*#institution*],
     [*#expected-date*],
     emph([#major, #minor]),
-    emph(location),
+    emph(gpa),
   )
   v(-0.2em)
   if body != [] {

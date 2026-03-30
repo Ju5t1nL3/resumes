@@ -32,7 +32,7 @@
 #custom-title("Education")[
   #education-heading(
     "Texas A&M University", // institution
-    "College Station, TX", // location
+    "GPA: 4.00/4.00", // gpa
     "Bachelor of Science in Computer Science", // major
     "Minor in Mathematics & Statistics", // minor
     "May 2028",
