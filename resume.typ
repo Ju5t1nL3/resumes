@@ -19,29 +19,34 @@
   website: "",
   linkedin-user-id: "",
   github-username: "",
-  body
+  body,
 ) = {
   set document(
-    title:  author-name + " | " + document-title-suffix ,
+    title: author-name + " | " + document-title-suffix,
     author: author-name,
     keywords: ("cv", "resume"),
-    date: none
+    date: none,
   )
 
   set page(
     paper: paper,
     margin: (
-      top: top-margin, bottom: bottom-margin,
-      left: left-margin, right: right-margin
+      top: top-margin,
+      bottom: bottom-margin,
+      left: left-margin,
+      right: right-margin,
     ),
   )
 
   set text(
-    font: font, size: font-size, lang: lang, ligatures: false
+    font: font,
+    size: font-size,
+    lang: lang,
+    ligatures: false,
   )
 
   show heading.where(
-    level: 1
+    level: 1,
   ): it => block(width: 100%)[
     #set text(font-size + 2pt, weight: "regular")
     #smallcaps(it.body)
@@ -61,11 +66,11 @@
   }
 
   align(author-position, [
-    #upper(text(font-size+16pt, weight: "extrabold")[#author-name])
+    #upper(text(font-size + 16pt, weight: "extrabold")[#author-name])
     #v(-2em)
   ])
 
-  align(personal-info-position, text(personal-info-font-size)[    
+  align(personal-info-position, text(personal-info-font-size)[
     #{
       let sepSpace = 0.2em
       let items = (
@@ -73,17 +78,27 @@
         contact_item(location),
         contact_item(email, link-type: "mailto:"),
         contact_item(website, link-type: "https://"),
-        contact_item(linkedin-user-id, link-type: "https://linkedin.com/in/", prefix: "linkedin.com/in/"),
-        contact_item(github-username, link-type: "https://github.com/", prefix: "github.com/"),
+        contact_item(
+          linkedin-user-id,
+          link-type: "https://linkedin.com/in/",
+          prefix: "linkedin.com/in/",
+        ),
+        contact_item(
+          github-username,
+          link-type: "https://github.com/",
+          prefix: "github.com/",
+        ),
       )
-      items.filter(x => x != none).join([
-        #show "|": sep => {
-          h(sepSpace)
-          [|]
-          h(sepSpace)
-        }
-        |
-      ])
+      items
+        .filter(x => x != none)
+        .join([
+          #show "|": sep => {
+            h(sepSpace)
+            [|]
+            h(sepSpace)
+          }
+          |
+        ])
     }
   ])
 
@@ -96,8 +111,7 @@
 #let generic_1x2(r1c1, r1c2) = {
   grid(
     columns: (1fr, 1fr),
-    align(left)[#r1c1],
-    align(right)[#r1c2]
+    align(left)[#r1c1], align(right)[#r1c2],
   )
 }
 
@@ -125,7 +139,7 @@
     set list(
       body-indent: 0.1em,
       indent: 0em,
-      marker: []
+      marker: [],
     )
     body
   }
@@ -142,15 +156,15 @@
   }
 
   return [
-      #custom-date-format(start-date, pattern: "MMM yyyy") -- 
-      #if (
-        (end-date.month() == datetime.today().month()) and 
-        (end-date.year() == datetime.today().year())
-      ) [
-        Present // Needs to be translated
-      ] else [
-        #custom-date-format(end-date, pattern: "MMM yyyy")
-      ]
+    #custom-date-format(start-date, pattern: "MMM yyyy") --
+    #if (
+      (end-date.month() == datetime.today().month())
+        and (end-date.year() == datetime.today().year())
+    ) [
+      Present // Needs to be translated
+    ] else [
+      #custom-date-format(end-date, pattern: "MMM yyyy")
+    ]
   ]
 }
 
@@ -162,8 +176,10 @@
 
   generic_2x2(
     (1fr, 1fr),
-    [*#title*], [*#period_worked(start-date, end-date)*], 
-    [#company], emph(location)
+    [*#title*],
+    [*#period_worked(start-date, end-date)*],
+    [#company],
+    emph(location),
   )
   v(-0.2em)
   if body != [] {
@@ -177,7 +193,7 @@
 // Pretty self-explanatory.
 #let project-heading(name, url: "", ..details, body) = {
   let display-name = if url != "" { link(project-url)[*#name*] } else {
-    [*#name*] 
+    [*#name*]
   }
   let all-items = (display-name,)
 
@@ -185,7 +201,7 @@
     all-items.push(detail)
   }
 
-  all-items.join([ #(0.3em) | #(0.3em) ])
+  all-items.join([ #0.3em | #0.3em ])
 
   v(-0.2em)
   if body != [] {
@@ -197,12 +213,21 @@
 }
 
 // Pretty self-explanatory.
-#let education-heading(institution, location, major, minor, expected-date, body) = {
+#let education-heading(
+  institution,
+  location,
+  major,
+  minor,
+  expected-date,
+  body,
+) = {
   // sanity checks
   generic_2x2(
     (70%, 30%),
-    [*#institution*], [*#expected-date*], 
-    [#major, #minor], [**#location**]
+    [*#institution*],
+    [*#expected-date*],
+    [#major, #minor],
+    [**#location**],
   )
   v(-0.2em)
   if body != [] {
