@@ -31,14 +31,14 @@
 
 #custom-title("Education")[
   #education-heading(
-    "Scranton University",                    // institution
-    "Scranton, PA",                           // location
-    "Bachelor of Arts",                       // degree
-    "Business Administration",                // major
-    datetime(year: 1992, month: 9, day: 1),   // start-date
-    datetime(year: 1998, month: 4,  day: 1)   // end-date
+    "Texas A&M University",                    // institution
+    "College Station, TX",                           // location
+    "Bachelor of Science in Computer Science",                       // degree
+    "Minor in Mathematics & Statistics",                // major
+    "May 2028",
   )[
-    - Awarded "Most Determined Student" in senior year
+    - *Awards:* Craig and Galen Brown Engineering Honors, Lechner Scholarship, Pete Hunter Dunham '41 Mem Scholarship
+    - *Relevant Coursework*: Data Structures and Algorithms, Computer Architecture, Computer Systems, Foundations of Software Engineering, Competitive Programming, Machine Learning, Cryptography
   ]
   // More educational qualifications ... 
 ]
