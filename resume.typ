@@ -41,7 +41,7 @@
   set text(
     font: font,
     size: font-size,
-    lang: lang,
+    lang: "en",
     ligatures: false,
   )
 
