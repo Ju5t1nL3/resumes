@@ -10,7 +10,7 @@
 
 // Since the following arguments are within the `with` block,
 // you can remove/comment any argument to fallback to the preset value and/or
-// remove it. 
+// remove it.
 #show: resume.with(
   top-margin: 0.45in,
   font: "New Computer Modern",
@@ -22,7 +22,7 @@
   email: email,
   website: personal-site,
   linkedin-user-id: linkedin,
-  github-username: github
+  github-username: github,
 )
 
 // Use custom-title function instead of first-level headings to customize the
@@ -31,25 +31,25 @@
 
 #custom-title("Education")[
   #education-heading(
-    "Texas A&M University",                    // institution
-    "College Station, TX",                           // location
-    "Bachelor of Science in Computer Science",                       // degree
-    "Minor in Mathematics & Statistics",                // major
+    "Texas A&M University", // institution
+    "College Station, TX", // location
+    "Bachelor of Science in Computer Science", // major
+    "Minor in Mathematics & Statistics", // minor
     "May 2028",
   )[
     - *Awards:* Craig and Galen Brown Engineering Honors, Lechner Scholarship, Pete Hunter Dunham '41 Mem Scholarship
     - *Relevant Coursework*: Data Structures and Algorithms, Computer Architecture, Computer Systems, Foundations of Software Engineering, Competitive Programming, Machine Learning, Cryptography
   ]
-  // More educational qualifications ... 
+  // More educational qualifications ...
 ]
 
-#custom-title("Experience")[  
+#custom-title("Experience")[
   #work-heading(
-    "Regional Manager",                     // title
-    "Dunder Mifflin",                       // company
-    "Scranton, PA",                         // location
-    datetime(year:2013, month:5, day:1),    // start-date
-    "Present"                               // end-date
+    "Regional Manager", // title
+    "Dunder Mifflin", // company
+    "Scranton, PA", // location
+    datetime(year: 2013, month: 5, day: 1), // start-date
+    "Present", // end-date
   )[
     - Led a team of 10+ employees, boosting office productivity and morale
     - Maintained the highest sales average, outperforming competitors despite market challenges
@@ -61,7 +61,7 @@
 
 #custom-title("Projects")[
   #project-heading(
-    "Schrute Farms (Bed and Breakfast)",      // name
+    "Schrute Farms (Bed and Breakfast)", // name
     // "Next.js, TailwindCSS, Postgres",      // stack
     // "schrutefarms.com"                     // project_url
   )[
