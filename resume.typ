@@ -178,7 +178,7 @@
     (1fr, 1fr),
     [*#title*],
     [*#period_worked(start-date, end-date)*],
-    [#company],
+    emph(company),
     emph(location),
   )
   v(-0.2em)
@@ -226,8 +226,8 @@
     (70%, 30%),
     [*#institution*],
     [*#expected-date*],
-    [#major, #minor],
-    [**#location**],
+    emph([#major, #minor]),
+    emph(location),
   )
   v(-0.2em)
   if body != [] {
