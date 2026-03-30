@@ -31,12 +31,11 @@
 
 #custom-title("Education")[
   #education-heading(
-    "Texas A&M University", // institution
+    [*Texas A&M University | Engineering Honors *], // institution
     "GPA: 4.00/4.00", // gpa
     "Bachelor of Science in Computer Science", // degree
     "May 2028",
   )[
-    - *Awards:* Craig and Galen Brown Engineering Honors, Lechner Scholarship, Pete Hunter Dunham '41 Mem Scholarship
     - *Relevant Coursework*: Data Structures and Algorithms, Computer Architecture, Computer Systems, Foundations of Software Engineering, Competitive Programming, Machine Learning, Cryptography
   ]
   // More educational qualifications ...
