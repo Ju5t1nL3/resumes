@@ -175,16 +175,18 @@
 }
 
 // Pretty self-explanatory.
-#let project-heading(name, stack: "", project-url: "", body) = {
-  if project-url.len() != 0 { link(project-url)[*#name*] } else {
+#let project-heading(name, url: "", ..details, body) = {
+  let display-name = if url != "" { link(project-url)[*#name*] } else {
     [*#name*] 
   }
-  if stack != "" {
-    [
-      #show "|": sep => { h(0.3em); [|]; h(0.3em) }
-      |*#stack*
-    ]
+  let all-items = (display-name,)
+
+  for detail in details.pos() {
+    all-items.push(detail)
   }
+
+  all-items.join([ #(0.3em) | #(0.3em) ])
+
   v(-0.2em)
   if body != [] {
     v(-0.4em)
