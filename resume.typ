@@ -169,16 +169,16 @@
 }
 
 // Pretty self-explanatory.
-#let work-heading(title, company, location, start-date, end-date, body) = {
+#let work-heading(company, title, location, start-date, end-date, body) = {
   // sanity checks
   assert.eq(type(start-date), datetime)
   assert(type(end-date) == datetime or type(end-date) == str)
 
   generic_2x2(
     (1fr, 1fr),
-    [*#title*],
+    [*#company*],
     [*#period_worked(start-date, end-date)*],
-    emph(company),
+    emph(title),
     emph(location),
   )
   v(-0.2em)

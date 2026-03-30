@@ -48,11 +48,11 @@
 
 #custom-title("Experience")[
   #work-heading(
-    "Regional Manager", // title
-    "Dunder Mifflin", // company
+    "Regional Manager", // company
+    "Dunder Mifflin", // title
     "Scranton, PA", // location
     datetime(year: 2013, month: 5, day: 1), // start-date
-    "Present", // end-date
+    "", // end-date
   )[
     - Led a team of 10+ employees, boosting office productivity and morale
     - Maintained the highest sales average, outperforming competitors despite market challenges
