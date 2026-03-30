@@ -192,7 +192,7 @@
 
 // Pretty self-explanatory.
 #let project-heading(name, url: "", ..details, body) = {
-  let display-name = if url != "" { link(project-url)[*#name*] } else {
+  let display-name = if url != "" { link(url)[*#name*] } else {
     [*#name*]
   }
   let all-items = (display-name,)
