@@ -48,18 +48,12 @@
 
 #custom-title("Experience")[
   #work-heading(
-    "Regional Manager", // company
-    "Dunder Mifflin", // title
-    "Scranton, PA", // location
-    datetime(year: 2013, month: 5, day: 1), // start-date
-    "", // end-date
-  )[
-    - Led a team of 10+ employees, boosting office productivity and morale
-    - Maintained the highest sales average, outperforming competitors despite market challenges
-    - Implemented innovative security measures to protect the office from threats, including criminal activity and wildlife intrusions
-    - Successfully negotiated client contracts, increasing annual revenue by 20%
-  ]
-  // More experiences ...
+    "Hewlett Packard Enterprise", // title
+    "Incoming Software Engineer Intern", // company
+    "San Jose, CA", // location
+    datetime(year: 2026, month: 5, day: 26), // start-date
+    datetime(year: 2026, month: 8, day: 22), // end-date
+  )[]
 ]
 
 #custom-title("Projects")[
