@@ -38,7 +38,12 @@
   )[
     - *Relevant Coursework*: Data Structures and Algorithms, Computer Architecture, Computer Systems, Foundations of Software Engineering, Competitive Programming, Machine Learning, Cryptography
   ]
-  // More educational qualifications ...
+  #education-heading(
+    [*Dulles High School* | Valedictorian (1/518) | _GPA: 4.63/4.00_ ], // institution
+    "", // gpa
+    "", // major
+    "May 2024",
+  )[]
 ]
 
 #custom-title("Experience")[
