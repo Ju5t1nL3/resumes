@@ -33,8 +33,7 @@
   #education-heading(
     "Texas A&M University", // institution
     "GPA: 4.00/4.00", // gpa
-    "Bachelor of Science in Computer Science", // major
-    "Minor in Mathematics & Statistics", // minor
+    "Bachelor of Science in Computer Science", // degree
     "May 2028",
   )[
     - *Awards:* Craig and Galen Brown Engineering Honors, Lechner Scholarship, Pete Hunter Dunham '41 Mem Scholarship

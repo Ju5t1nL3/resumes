@@ -216,17 +216,16 @@
 #let education-heading(
   institution,
   gpa,
-  major,
-  minor,
+  degree,
   expected-date,
   body,
 ) = {
   // sanity checks
   generic_2x2(
     (70%, 30%),
-    [*#institution*],
+    [#institution],
     [*#expected-date*],
-    emph([#major, #minor]),
+    emph(degree),
     emph(gpa),
   )
   v(-0.2em)
