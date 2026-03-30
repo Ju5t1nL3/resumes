@@ -48,11 +48,25 @@
 
 #custom-title("Experience")[
   #work-heading(
-    "Hewlett Packard Enterprise", // title
-    "Incoming Software Engineer Intern", // company
+    "Hewlett Packard Enterprise", // company
+    "Incoming Software Engineer Intern", // title
     "San Jose, CA", // location
     datetime(year: 2026, month: 5, day: 26), // start-date
     datetime(year: 2026, month: 8, day: 22), // end-date
+  )[]
+  #work-heading(
+    "Flow", // company
+    "Software Engineer (Contract/Part-time)", // title
+    "College Station, TX", // location
+    datetime(year: 2024, month: 12, day: 26), // start-date
+    "Present", // end-date
+  )[]
+  #work-heading(
+    "TAMUhack", // company
+    "Technical Lead", // title
+    "College Station, TX", // location
+    datetime(year: 2024, month: 11, day: 26), // start-date
+    "Present", // end-date
   )[]
 ]
 
