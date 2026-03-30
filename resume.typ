@@ -201,7 +201,7 @@
     all-items.push(detail)
   }
 
-  all-items.join([ #0.3em | #0.3em ])
+  all-items.join([ #h(0.3em) | #h(0.3em) ])
 
   v(-0.2em)
   if body != [] {
