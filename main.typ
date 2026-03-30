@@ -72,15 +72,13 @@
 
 #custom-title("Projects")[
   #project-heading(
-    "Schrute Farms (Bed and Breakfast)", // name
-    // "Next.js, TailwindCSS, Postgres",      // stack
-    // "schrutefarms.com"                     // project_url
+    "Mailgun-to-Listmonk Webhook Bridge",
+    url: "https://github.com/Ju5t1nL3/mailgun-listmonk-webhook",
+    [_Python, FastAPI, Docker, GitHub Actions, Pytest_],
   )[
-    - Established and managed a family-run agro-tourism business offering unique activities such as table-making workshops, beet farming tours, and hay rides
-    - Increased guest bookings by 50% through effective online marketing and guest engagement
-    - Maintained a 4.9/5 guest satisfaction rating on travel review platforms
+    - Architected an asynchronous microservice with *FastAPI* to parse, verify, and translate Mailgun event payloads into Listmonk's bounce processing API structure
+    - Engineered a fully automated CI/CD pipeline using *GitHub Actions* to run rigorous type-checking, execute *Pytest* suites, and publish Dockerized images to the GitHub Container Registry
   ]
-  // More projects ...
 ]
 
 // Use `skills` function to create list with custom rules surrounding indentation and alignment.
