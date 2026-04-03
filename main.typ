@@ -60,14 +60,21 @@
     "College Station, TX", // location
     datetime(year: 2024, month: 12, day: 26), // start-date
     "Present", // end-date
-  )[]
+  )[
+    - Led backend development of a mobile app to improve ride share experiences with *100+* drivers on board powered by *Google Firebase, Google Maps API, and Stripe*
+    - Implemented an advanced AI model engineered to identify and predict high-demand hotspots for drivers' earning potential with *PyTorch*
+  ]
   #work-heading(
     "TAMUhack", // company
     "Technical Lead", // title
     "College Station, TX", // location
     datetime(year: 2024, month: 11, day: 26), // start-date
     "Present", // end-date
-  )[]
+  )[
+    - Plan and develop *accessible* website experiences attracting *20K+ visitors* for one of Texas's largest student-run hackathons with *800+ attendees* powered by *Next.js, Astro, Svelte, React, GSAP, Framer, and more*
+    - Processed over *1K+ applications and email sending* using hacker registration system written with *Django*
+    - Built a pairwise-comparison judging system improving consistency across *150+ teams* utilizing *React, FastAPI, SQLAlchemy, and PostgreSQL*, with *Pytest* for testing and *REST API structure*
+  ]
 ]
 
 #custom-title("Projects")[
@@ -77,7 +84,16 @@
     [_Python, FastAPI, Docker, GitHub Actions, Pytest_],
   )[
     - Architected an asynchronous microservice with *FastAPI* to parse, verify, and translate Mailgun event payloads into Listmonk's bounce processing API structure
-    - Engineered a fully automated CI/CD pipeline using *GitHub Actions* to run rigorous type-checking, execute *Pytest* suites, and publish Dockerized images to the GitHub Container Registry
+    - Engineered a fully automated *CI/CD pipeline* using *GitHub Actions* to run rigorous type-checking, execute *Pytest* suites, and publish *Dockerized images* to the GitHub Container Registry
+  ]
+  #project-heading(
+    "Presentation Coach",
+    url: "https://github.com/Ju5t1nL3/mailgun-listmonk-webhook",
+    "2024 HowdyHack Winner",
+    [_Next.js, React, Tailwind CSS, TypeScript, Python_],
+  )[
+    - Collaborated with team through *Git* to integrate *OpenCV* in *Python* to determine audience engagement through facial recognition and *Whisper* to pull a transcript, identifying repeat and filler words, as well as words per minute}
+    - Built a responsive front end using *Next.js* and *Chart.js* to visually display audience retention over time, and *Flask* to store these time changes and correlate time data with audience engagement
   ]
 ]
 
