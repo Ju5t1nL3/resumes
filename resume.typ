@@ -1,11 +1,8 @@
 #import "@preview/datify:1.0.0": custom-date-format
 
 #let resume(
-  paper: "a4",
-  top-margin: 0.4in,
-  bottom-margin: 0.2in,
-  left-margin: 0.3in,
-  right-margin: 0.3in,
+  paper: "us-letter",
+  margin: 0.5in,
   font: "New Computer Modern",
   font-size: 11pt,
   personal-info-font-size: 10.5pt,
@@ -30,12 +27,7 @@
 
   set page(
     paper: paper,
-    margin: (
-      top: top-margin,
-      bottom: bottom-margin,
-      left: left-margin,
-      right: right-margin,
-    ),
+    margin: 0.5in,
   )
 
   set text(
@@ -45,6 +37,7 @@
     ligatures: false,
   )
 
+  set par(leading: 0.5em) // Try 0.5em, or even 0.45em if desperate
   show heading.where(
     level: 1,
   ): it => block(width: 100%)[

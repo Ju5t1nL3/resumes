@@ -12,7 +12,6 @@
 // you can remove/comment any argument to fallback to the preset value and/or
 // remove it.
 #show: resume.with(
-  top-margin: 0.45in,
   font: "New Computer Modern",
   personal-info-font-size: 9.2pt,
   author-position: center,
