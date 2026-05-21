@@ -48,7 +48,7 @@
 #custom-title("Experience")[
   #work-heading(
     "Hewlett Packard Enterprise", // company
-    "Incoming Software Engineer Intern", // title
+    "Software Engineer Intern", // title
     "San Jose, CA", // location
     datetime(year: 2026, month: 5, day: 26), // start-date
     "Present", // end-date
