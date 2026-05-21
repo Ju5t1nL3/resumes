@@ -51,8 +51,6 @@
     "Incoming Software Engineer Intern", // title
     "San Jose, CA", // location
     datetime(year: 2026, month: 5, day: 26), // start-date
-    datetime(year: 2026, month: 8, day: 22), // end-date
-  )[]
   #work-heading(
     "Flow", // company
     "Software Engineer (Contract/Part-time)", // title
@@ -60,6 +58,7 @@
     datetime(year: 2024, month: 12, day: 26), // start-date
     "Present", // end-date
   )[
+    - Incoming intern slated to automate and optimize edge-to-cloud networking infrastructure within an *AWS* environment, utilizing *React*, *Node.js*, and *Kubernetes*. 
     - Led backend development of a mobile app to improve ride share experiences with *100+* drivers on board powered by *Google Firebase, Google Maps API, and Stripe*
     - Implemented an advanced AI model engineered to identify and predict high-demand hotspots for drivers' earning potential with *PyTorch*
   ]
