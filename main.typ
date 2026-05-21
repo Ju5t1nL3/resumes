@@ -51,16 +51,9 @@
     "Incoming Software Engineer Intern", // title
     "San Jose, CA", // location
     datetime(year: 2026, month: 5, day: 26), // start-date
-  #work-heading(
-    "Flow", // company
-    "Software Engineer (Contract/Part-time)", // title
-    "College Station, TX", // location
-    datetime(year: 2024, month: 12, day: 26), // start-date
     "Present", // end-date
   )[
     - Incoming intern slated to automate and optimize edge-to-cloud networking infrastructure within an *AWS* environment, utilizing *React*, *Node.js*, and *Kubernetes*. 
-    - Led backend development of a mobile app to improve ride share experiences with *100+* drivers on board powered by *Google Firebase, Google Maps API, and Stripe*
-    - Implemented an advanced AI model engineered to identify and predict high-demand hotspots for drivers' earning potential with *PyTorch*
   ]
   #work-heading(
     "TAMUhack", // company
@@ -72,6 +65,16 @@
     - Plan and develop *accessible* website experiences attracting *20K+ visitors* for one of Texas's largest student-run hackathons with *800+ attendees* powered by *Next.js, Astro, Svelte, React, GSAP, Framer, and more*
     - Processed over *1K+ applications and email sending* using hacker registration system written with *Django*
     - Built a pairwise-comparison judging system improving consistency across *150+ teams* utilizing *React, FastAPI, SQLAlchemy, and PostgreSQL*, with *Pytest* for testing and *REST API structure*
+  ]
+  #work-heading(
+    "Flow", // company
+    "Software Engineer", // title
+    "College Station, TX", // location
+    datetime(year: 2024, month: 12, day: 26), // start-date
+    datetime(year: 2026, month: 2, day: 26), // end-date
+  )[
+    - Led backend development of a mobile app to improve ride share experiences with *100+* drivers on board powered by *Google Firebase, Google Maps API, and Stripe*
+    - Implemented an advanced AI model engineered to identify and predict high-demand hotspots for drivers' earning potential with *PyTorch*
   ]
 ]
 
