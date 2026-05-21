@@ -4,7 +4,7 @@
   paper: "us-letter",
   margin: 0.5in,
   font: "New Computer Modern",
-  font-size: 11pt,
+  font-size: 10.5pt,
   personal-info-font-size: 10.5pt,
   document-title-suffix: "Resume",
   author-name: "",
