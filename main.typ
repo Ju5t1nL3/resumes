@@ -13,7 +13,7 @@
 // remove it.
 #show: resume.with(
   font: "New Computer Modern",
-  personal-info-font-size: 9.2pt,
+  personal-info-font-size: 10pt,
   author-position: center,
   personal-info-position: center,
   author-name: name,
