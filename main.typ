@@ -53,7 +53,9 @@
     datetime(year: 2026, month: 5, day: 26), // start-date
     "Present", // end-date
   )[
-    - Incoming intern slated to automate and optimize edge-to-cloud networking infrastructure within an *AWS* environment, utilizing *React*, *Node.js*, and *Kubernetes*. 
+    - Achieved an *8x acceleration* in test-gap discovery, orchestrating *parallel LLM agents* to automatically analyze *25K+ uncovered lines* and *1.6K Stryker mutation cases*.
+    - Expanded *test coverage by 35%* to enhance the reliability and deployment safety of enterprise networking services utilized by *50K+ organizations*.
+    - Integrated multi-source context parsing across *Node.js* source, *Mocha* integration tests, *MongoDB*, and *Redis* to dynamically identify edge-case architecture flaws.
   ]
   #work-heading(
     "TAMUhack", // company
