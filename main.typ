@@ -53,9 +53,10 @@
     datetime(year: 2026, month: 5, day: 26), // start-date
     datetime(year: 2026, month: 8, day: 14), // end-date
   )[
-    - Achieved an *8x acceleration* in test-gap discovery, orchestrating *parallel LLM agents* to automatically analyze *25K+ uncovered lines* and *1.6K Stryker mutation cases*.
-    - Expanded *test coverage by 35%* to enhance the reliability and deployment safety of enterprise networking services utilized by *50K+ organizations*.
-    - Integrated multi-source context parsing across *Node.js* source, *Mocha* integration tests, *MongoDB*, and *Redis* to dynamically identify edge-case architecture flaws.
+    - Accelerated test discovery *8x*, parallelizing *LLM agents* to expose untested edge cases across *25K+ lines*.
+    - Engineered pipelines to resolve *1.6K Stryker mutations*, enforcing deterministic validation via *Mocha* and *c8*.
+    - Injected AI tests covering *600+ new lines*, applying serial validation to block *Redis/MongoDB* state pollution.
+    - Orchestrated *PR workflows*, bypassing CI/CD bottlenecks to safely scale AI test generation across the monolith.
   ]
   #work-heading(
     "TAMUhack", // company
