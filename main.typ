@@ -88,10 +88,12 @@
   #project-heading(
     "Mailgun-to-Listmonk Webhook Bridge",
     url: "https://github.com/Ju5t1nL3/mailgun-listmonk-webhook",
-    [_Python, FastAPI, Docker, GitHub Actions, Pytest_],
+    [_Python, FastAPI, Docker, uv_],
   )[
-    - Architected an asynchronous microservice with *FastAPI* to parse, verify, and translate Mailgun event payloads into Listmonk's bounce processing API structure
-    - Engineered a fully automated *CI/CD pipeline* using *GitHub Actions* to run rigorous type-checking, execute *Pytest* suites, and publish *Dockerized images* to the GitHub Container Registry
+    - Developed a *FastAPI* bridge translating *Mailgun* events to *Listmonk* APIs, resolving an open-source gap.
+    - Secured the webhook pipeline via *HMAC-SHA256* signature verification and custom headers to drop spoofed data.
+    - Achieved *100% test coverage* in *pytest*, utilizing *Pydantic* schemas to strictly validate JSON transformations.
+    - Published a production *GHCR Docker* image, enforcing strict typing and linting via *uv*, *Pyright*, and *Ruff*.
   ]
   #project-heading(
     "Presentation Coach",
