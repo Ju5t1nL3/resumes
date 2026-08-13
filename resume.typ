@@ -71,17 +71,17 @@
         contact_item(phone),
         contact_item(location),
         contact_item(email, link-type: "mailto:"),
-        contact_item(website, link-type: "https://"),
-        contact_item(
-          linkedin-user-id,
-          link-type: "https://linkedin.com/in/",
-          prefix: "linkedin.com/in/",
-        ),
         contact_item(
           github-username,
           link-type: "https://github.com/",
-          prefix: "github.com/",
+          label: "GitHub",
         ),
+        contact_item(
+          linkedin-user-id,
+          link-type: "https://linkedin.com/in/",
+          label: "LinkedIn",
+        ),
+        contact_item(website, link-type: "https://", label: "Portfolio"),
       )
       items
         .filter(x => x != none)
