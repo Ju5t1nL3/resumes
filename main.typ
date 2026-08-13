@@ -65,9 +65,10 @@
     datetime(year: 2024, month: 11, day: 26), // start-date
     "Present", // end-date
   )[
-    - Plan and develop *accessible* website experiences attracting *20K+ visitors* for one of Texas's largest student-run hackathons with *800+ attendees* powered by *Next.js, Astro, Svelte, React, GSAP, Framer, and more*
-    - Processed over *1K+ applications and email sending* using hacker registration system written with *Django*
-    - Built a pairwise-comparison judging system improving consistency across *150+ teams* utilizing *React, FastAPI, SQLAlchemy, and PostgreSQL*, with *Pytest* for testing and *REST API structure*
+    - Optimized *Next.js/Astro* render performance by *50%* for *20K+ users* via *GPU-compositing* and *SVG culling*.
+    - Scaled *Django* dispatch for *1K+ applicants*, decoupling synchronous email tasks via *async worker queues*.
+    - Hardened help-desk APIs via *HMAC-SHA256* signatures and strict timestamp validation blocking *replay attacks*.
+    - Architected a pairwise judging platform in *FastAPI* and *PostgreSQL*, standardizing evaluation for *150+ teams*.
   ]
   #work-heading(
     "Flow", // company
