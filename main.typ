@@ -77,8 +77,10 @@
     datetime(year: 2024, month: 12, day: 26), // start-date
     datetime(year: 2026, month: 2, day: 26), // end-date
   )[
-    - Led backend development of a mobile app to improve ride share experiences with *100+* drivers on board powered by *Google Firebase, Google Maps API, and Stripe*
-    - Implemented an advanced AI model engineered to identify and predict high-demand hotspots for drivers' earning potential with *PyTorch*
+    - Deployed geospatial ride-matching via *geohashing*, ranking and routing sequential offers for *100+ drivers*.
+    - Integrated a *Stripe Connect* payment pipeline, utilizing manual capture auth and scheduled weekly cron payouts.
+    - Provisioned event-driven *Cloud Functions* via *Firestore* triggers to chunk and dispatch *Expo* push alerts.
+    - Trained *PyTorch* predictive models to map high-demand geographic hotspots, optimizing driver routing margins.
   ]
 ]
 
