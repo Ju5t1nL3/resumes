@@ -51,7 +51,7 @@
     "Software Engineer Intern", // title
     "San Jose, CA", // location
     datetime(year: 2026, month: 5, day: 26), // start-date
-    "Present", // end-date
+    datetime(year: 2026, month: 8, day: 14), // end-date
   )[
     - Achieved an *8x acceleration* in test-gap discovery, orchestrating *parallel LLM agents* to automatically analyze *25K+ uncovered lines* and *1.6K Stryker mutation cases*.
     - Expanded *test coverage by 35%* to enhance the reliability and deployment safety of enterprise networking services utilized by *50K+ organizations*.
