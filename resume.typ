@@ -143,17 +143,11 @@
   // sanity checks
   assert.eq(type(start-date), datetime)
   assert(type(end-date) == datetime or type(end-date) == str)
-
-  if type(end-date) == str and end-date == "Present" {
-    end-date = datetime.today()
-  }
+  assert(type(end-date) == datetime or end-date == "Present")
 
   return [
     #custom-date-format(start-date, pattern: "MMM yyyy") --
-    #if (
-      (end-date.month() == datetime.today().month())
-        and (end-date.year() == datetime.today().year())
-    ) [
+    #if end-date == "Present" [
       Present // Needs to be translated
     ] else [
       #custom-date-format(end-date, pattern: "MMM yyyy")
