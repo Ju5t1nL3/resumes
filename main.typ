@@ -112,8 +112,8 @@
 // It is specifically for lists directly inside the custom-title section.
 #custom-title("Skills")[
   #skills()[
-    - *Languages:* C++, Python, TypeScript, HTML/CSS, JavaScript, Go (Golang), Rust, Java, SQL
-    - *Frameworks & Libraries:* React, TailwindCSS, FastAPI, GSAP, PyTorch, Django, Next.js, Framer Motion, Zustand, Prisma (ORM), Flask, Node.js, Svelte, Vue.js
+    - *Languages:* C++, Python, TypeScript, HTML/CSS, JavaScript, Rust, Java, SQL
+    - *Frameworks & Libraries:* React, TailwindCSS, FastAPI, GSAP, PyTorch, Django, Next.js, Prisma
     - *Tools & Infrastructure:* Git, GitHub, GitHub Actions, PostgreSQL, Firebase, RESTful APIs, Docker, Railway, Vercel, Microservices Architecture, AWS (S3, Lambda), SQLite, WebSockets, Google Cloud Platform (GCP)
   ]
 ]
