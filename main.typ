@@ -99,10 +99,12 @@
     "Presentation Coach",
     url: "https://github.com/Ju5t1nL3/mailgun-listmonk-webhook",
     "2024 HowdyHack Winner",
-    [_Next.js, React, Tailwind CSS, TypeScript, Python_],
+    [_Next.js, Tailwind CSS, Flask, OpenCV, Whisper AI_],
   )[
-    - Collaborated with team through *Git* to integrate *OpenCV* in *Python* to determine audience engagement through facial recognition and *Whisper* to pull a transcript, identifying repeat and filler words, as well as words per minute}
-    - Built a responsive front end using *Next.js* and *Chart.js* to visually display audience retention over time, and *Flask* to store these time changes and correlate time data with audience engagement
+    - Constructed a computer vision pipeline via *OpenCV Haar cascades* to quantify audience eye-contact and retention.
+    - Processed local media inputs via *FFmpeg* and *OpenAI Whisper* to transcribe speech and extract temporal data.
+    - Parsed presentation *XML*, utilizing *NLTK* and fuzzy text matching to auto-sync speech to slide transitions.
+    - Rendered real-time analytics dashboards via *Next.js* and *Chart.js*, streaming multi-metric speaker feedback.
   ]
 ]
 
