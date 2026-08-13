@@ -48,10 +48,11 @@
     #v(-0.2em)
   ]
 
-  let contact_item(value, link-type: "", prefix: "") = {
+  let contact_item(value, link-type: "", prefix: "", label: none) = {
     if value != "" {
       if link-type != "" {
-        underline(offset: 0.3em)[#link(link-type + value)[#(prefix + value)]]
+        let display-value = if label == none { prefix + value } else { label }
+        underline(offset: 0.3em)[#link(link-type + value)[#display-value]]
       } else {
         value
       }
