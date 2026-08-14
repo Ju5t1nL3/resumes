@@ -9,10 +9,6 @@
 #let personal-site = "justindtle.com"
 
 #show: resume.with(
-  font: "New Computer Modern",
-  personal-info-font-size: 10pt,
-  author-position: center,
-  personal-info-position: center,
   author-name: name,
   phone: phone,
   email: email,
