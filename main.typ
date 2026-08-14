@@ -8,9 +8,6 @@
 #let linkedin = "justindtle"
 #let personal-site = "justindtle.com"
 
-// Since the following arguments are within the `with` block,
-// you can remove/comment any argument to fallback to the preset value and/or
-// remove it.
 #show: resume.with(
   font: "New Computer Modern",
   personal-info-font-size: 10pt,
@@ -23,10 +20,6 @@
   linkedin-user-id: linkedin,
   github-username: github,
 )
-
-// Use custom-title function instead of first-level headings to customize the
-// size between two sections by specifying the `spacingBetween` argument.
-// https://typst.app/docs/reference/layout/length/
 
 #custom-title("Education")[
   #education-heading(
