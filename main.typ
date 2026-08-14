@@ -45,7 +45,7 @@
     - Accelerated test discovery *8x*, parallelizing *LLM agents* to expose untested edge cases across *25K+ lines*.
     - Engineered pipelines to resolve *1.6K Stryker mutations*, enforcing deterministic validation via *Mocha* and *c8*.
     - Injected AI tests covering *600+ new lines*, applying serial validation to block *Redis/MongoDB* state pollution.
-    - Orchestrated *PR workflows*, bypassing CI/CD bottlenecks to safely scale AI test generation across the monolith.
+    - Orchestrated *PR workflows*, mitigating CI/CD bottlenecks to safely scale AI test generation across the monolith.
   ]
   #work-heading(
     "TAMUhack", // company
@@ -67,7 +67,7 @@
     datetime(year: 2026, month: 2, day: 26), // end-date
   )[
     - Deployed geospatial ride-matching via *geohashing*, ranking and routing sequential offers for *100+ drivers*.
-    - Integrated a *Stripe Connect* payment pipeline, utilizing manual capture auth and scheduled weekly cron payouts.
+    - Integrated a *Stripe Connect* payment pipeline, leveraging manual capture auth and scheduled weekly cron payouts.
     - Provisioned event-driven *Cloud Functions* via *Firestore* triggers to chunk and dispatch *Expo* push alerts.
     - Trained *PyTorch* predictive models to map high-demand geographic hotspots, optimizing driver routing margins.
   ]
@@ -81,7 +81,7 @@
   )[
     - Developed a *FastAPI* bridge translating *Mailgun* events to *Listmonk* APIs, resolving an open-source gap.
     - Secured the webhook pipeline via *HMAC-SHA256* signature verification and custom headers to drop spoofed data.
-    - Achieved *100% test coverage* in *pytest*, utilizing *Pydantic* schemas to strictly validate JSON transformations.
+    - Enforced *100% test coverage* in *pytest*, utilizing *Pydantic* schemas to strictly validate JSON transformations.
     - Published a production *GHCR Docker* image, enforcing strict typing and linting via *uv*, *Pyright*, and *Ruff*.
   ]
   #project-heading(
