@@ -41,7 +41,8 @@
   show heading.where(
     level: 1,
   ): it => block(width: 100%)[
-    #set text(font-size + 2pt, weight: "regular")
+    // Temporarily relaxed layout while the resume has extra vertical space.
+    #set text(font-size + 3pt, weight: "regular")
     #smallcaps(it.body)
     #v(-1em)
     #line(length: 100%, stroke: stroke(thickness: 0.4pt))
@@ -120,7 +121,7 @@
   )
 }
 
-#let custom-title(title, spacing-between: -0.5em, body) = {
+#let custom-title(title, spacing-between: 0em, body) = {
   [= #title]
   body
   v(spacing-between)
