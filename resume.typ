@@ -60,7 +60,7 @@
   }
 
   align(author-position, [
-    #upper(text(font-size + 16pt, weight: "extrabold")[#author-name])
+    #text(font-size + 16pt, weight: "extrabold")[#author-name]
     #v(-2em)
   ])
 
