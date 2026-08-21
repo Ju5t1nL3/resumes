@@ -86,7 +86,7 @@
   ]
   #project-heading(
     "Presentation Coach",
-    url: "https://github.com/Ju5t1nL3/mailgun-listmonk-webhook",
+    url: "https://github.com/BriceOckman/Howdy-Hack-2024",
     "2024 HowdyHack Winner",
     [_Next.js, Tailwind CSS, Flask, OpenCV, Whisper AI_],
   )[
